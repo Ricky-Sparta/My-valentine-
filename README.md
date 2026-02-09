@@ -36,3 +36,94 @@ script.js
 <script src="script.js"></script>
 </body>
 </html>
+function yesClick() {
+  document.getElementById("card").innerHTML = `
+    <h1 style="color:hotpink;">Yay Shanny!!! 💖</h1>
+    <p>You just made me the happiest person alive 🥰</p>
+    <h2>Happy Valentine’s Day 🌹</h2>
+    <p>I love you so much 😘</p>
+    <p>— From Ragas 💘</p>
+  `;
+  fireworks();
+}
+
+function moveButton() {
+  const noBtn = document.getElementById("noBtn");
+  const x = Math.random() * (window.innerWidth - noBtn.clientWidth);
+  const y = Math.random() * (window.innerHeight - noBtn.clientHeight);
+
+  noBtn.style.position = "absolute";
+  noBtn.style.left = x + "px";
+  noBtn.style.top = y + "px";
+}
+
+// Floating hearts
+setInterval(() => {
+  const heart = document.createElement("div");
+  heart.className = "heart";
+  heart.innerHTML = "💖";
+  heart.style.left = Math.random() * window.innerWidth + "px";
+  heart.style.bottom = "0px";
+  document.body.appendChild(heart);
+
+  setTimeout(() => heart.remove(), 5000);
+}, 300);
+
+// Fireworks
+function fireworks() {
+  setInterval(() => {
+    const firework = document.createElement("div");
+    firework.className = "firework";
+    firework.innerHTML = "🎆";
+    firework.style.left = Math.random() * window.innerWidth + "px";
+    firework.style.top = Math.random() * window.innerHeight + "px";
+    document.body.appendChild(firework);
+
+    setTimeout(() => firework.remove(), 1000);
+  }, 400);
+}function yesClick() {
+  document.getElementById("card").innerHTML = `
+    <h1 style="color:hotpink;">Yay Shanny!!! 💖</h1>
+    <p>You just made me the happiest person alive 🥰</p>
+    <h2>Happy Valentine’s Day 🌹</h2>
+    <p>I love you so much 😘</p>
+    <p>— From Ragas 💘</p>
+  `;
+  fireworks();
+}
+
+function moveButton() {
+  const noBtn = document.getElementById("noBtn");
+  const x = Math.random() * (window.innerWidth - noBtn.clientWidth);
+  const y = Math.random() * (window.innerHeight - noBtn.clientHeight);
+
+  noBtn.style.position = "absolute";
+  noBtn.style.left = x + "px";
+  noBtn.style.top = y + "px";
+}
+
+// Floating hearts
+setInterval(() => {
+  const heart = document.createElement("div");
+  heart.className = "heart";
+  heart.innerHTML = "💖";
+  heart.style.left = Math.random() * window.innerWidth + "px";
+  heart.style.bottom = "0px";
+  document.body.appendChild(heart);
+
+  setTimeout(() => heart.remove(), 5000);
+}, 300);
+
+// Fireworks
+function fireworks() {
+  setInterval(() => {
+    const firework = document.createElement("div");
+    firework.className = "firework";
+    firework.innerHTML = "🎆";
+    firework.style.left = Math.random() * window.innerWidth + "px";
+    firework.style.top = Math.random() * window.innerHeight + "px";
+    document.body.appendChild(firework);
+
+    setTimeout(() => firework.remove(), 1000);
+  }, 400);
+}
